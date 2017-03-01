@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC15B1271E61B7C300F2314D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1261E61B7C300F2314D /* main.m */; };
+		FC15B12A1E61B7C300F2314D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1291E61B7C300F2314D /* AppDelegate.m */; };
+		FC15B12D1E61B7C300F2314D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B12C1E61B7C300F2314D /* ViewController.m */; };
+		FC15B1301E61B7C300F2314D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC15B12E1E61B7C300F2314D /* Main.storyboard */; };
+		FC15B1321E61B7C300F2314D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC15B1311E61B7C300F2314D /* Assets.xcassets */; };
+		FC15B1351E61B7C300F2314D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC15B1331E61B7C300F2314D /* LaunchScreen.storyboard */; };
+		FC15B13E1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B13D1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m */; };
+		FC15B1411E61BAFA00F2314D /* NSObject+MethodSwizz.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1401E61BAFA00F2314D /* NSObject+MethodSwizz.m */; };
+		FC15B1441E61BBDC00F2314D /* MitCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1431E61BBDC00F2314D /* MitCrashHandler.m */; };
+		FC15B1471E61CCBB00F2314D /* TestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1461E61CCBB00F2314D /* TestDemo.m */; };
+		FC15B1841E6412A400F2314D /* NSObject+KVOMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1831E6412A400F2314D /* NSObject+KVOMethod.m */; };
+		FC15B1C01E66B4D000F2314D /* NSObject+MitDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1BF1E66B4D000F2314D /* NSObject+MitDealloc.m */; };
+		FC15B1C91E66BBE500F2314D /* NSNotificationCenter+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1C81E66BBE500F2314D /* NSNotificationCenter+MitCrash.m */; };
+		FC15B1CC1E66BE1800F2314D /* NSTimer+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1CB1E66BE1800F2314D /* NSTimer+MitCrash.m */; };
+		FC15B1D21E66C0E100F2314D /* MitTimerSubOBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1D11E66C0E100F2314D /* MitTimerSubOBJ.m */; };
+		FC15B1D51E66C71500F2314D /* ViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1D41E66C71500F2314D /* ViewControllerTwo.m */; };
+		FC15B1D81E66F2CA00F2314D /* NSArray+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1D71E66F2CA00F2314D /* NSArray+MitCrash.m */; };
+		FC15B1DB1E66F39100F2314D /* NSDictionary+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1DA1E66F39100F2314D /* NSDictionary+MitCrash.m */; };
+		FC15B1DE1E66F45700F2314D /* NSMutableArray+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1DD1E66F45700F2314D /* NSMutableArray+MitCrash.m */; };
+		FC15B1E11E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1E01E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FC15B1221E61B7C300F2314D /* CrashHook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashHook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC15B1261E61B7C300F2314D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC15B1281E61B7C300F2314D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC15B1291E61B7C300F2314D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC15B12B1E61B7C300F2314D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC15B12C1E61B7C300F2314D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC15B12F1E61B7C300F2314D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC15B1311E61B7C300F2314D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC15B1341E61B7C300F2314D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC15B1361E61B7C300F2314D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC15B13C1E61B80D00F2314D /* NSObject+UnrecogniseMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UnrecogniseMethod.h"; sourceTree = "<group>"; };
+		FC15B13D1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UnrecogniseMethod.m"; sourceTree = "<group>"; };
+		FC15B13F1E61BAFA00F2314D /* NSObject+MethodSwizz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizz.h"; sourceTree = "<group>"; };
+		FC15B1401E61BAFA00F2314D /* NSObject+MethodSwizz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizz.m"; sourceTree = "<group>"; };
+		FC15B1421E61BBDC00F2314D /* MitCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MitCrashHandler.h; sourceTree = "<group>"; };
+		FC15B1431E61BBDC00F2314D /* MitCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MitCrashHandler.m; sourceTree = "<group>"; };
+		FC15B1451E61CCBB00F2314D /* TestDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDemo.h; sourceTree = "<group>"; };
+		FC15B1461E61CCBB00F2314D /* TestDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemo.m; sourceTree = "<group>"; };
+		FC15B1821E6412A400F2314D /* NSObject+KVOMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOMethod.h"; sourceTree = "<group>"; };
+		FC15B1831E6412A400F2314D /* NSObject+KVOMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOMethod.m"; sourceTree = "<group>"; };
+		FC15B1BE1E66B4D000F2314D /* NSObject+MitDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitDealloc.h"; sourceTree = "<group>"; };
+		FC15B1BF1E66B4D000F2314D /* NSObject+MitDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitDealloc.m"; sourceTree = "<group>"; };
+		FC15B1C71E66BBE500F2314D /* NSNotificationCenter+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+MitCrash.h"; sourceTree = "<group>"; };
+		FC15B1C81E66BBE500F2314D /* NSNotificationCenter+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B1CA1E66BE1800F2314D /* NSTimer+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MitCrash.h"; sourceTree = "<group>"; };
+		FC15B1CB1E66BE1800F2314D /* NSTimer+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B1D01E66C0E100F2314D /* MitTimerSubOBJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MitTimerSubOBJ.h; sourceTree = "<group>"; };
+		FC15B1D11E66C0E100F2314D /* MitTimerSubOBJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MitTimerSubOBJ.m; sourceTree = "<group>"; };
+		FC15B1D31E66C71500F2314D /* ViewControllerTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerTwo.h; sourceTree = "<group>"; };
+		FC15B1D41E66C71500F2314D /* ViewControllerTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTwo.m; sourceTree = "<group>"; };
+		FC15B1D61E66F2CA00F2314D /* NSArray+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MitCrash.h"; sourceTree = "<group>"; };
+		FC15B1D71E66F2CA00F2314D /* NSArray+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B1D91E66F39100F2314D /* NSDictionary+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MitCrash.h"; sourceTree = "<group>"; };
+		FC15B1DA1E66F39100F2314D /* NSDictionary+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B1DC1E66F45700F2314D /* NSMutableArray+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MitCrash.h"; sourceTree = "<group>"; };
+		FC15B1DD1E66F45700F2314D /* NSMutableArray+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B1DF1E66F7DE00F2314D /* NSMutableDictionary+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MitCrash.h"; sourceTree = "<group>"; };
+		FC15B1E01E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B1E21E66FD5C00F2314D /* MitCrashHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MitCrashHeader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC15B11F1E61B7C300F2314D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC15B1191E61B7C300F2314D = {
+			isa = PBXGroup;
+			children = (
+				FC15B1241E61B7C300F2314D /* CrashHook */,
+				FC15B1231E61B7C300F2314D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC15B1231E61B7C300F2314D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC15B1221E61B7C300F2314D /* CrashHook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC15B1241E61B7C300F2314D /* CrashHook */ = {
+			isa = PBXGroup;
+			children = (
+				FC15B1281E61B7C300F2314D /* AppDelegate.h */,
+				FC15B1291E61B7C300F2314D /* AppDelegate.m */,
+				FC15B13F1E61BAFA00F2314D /* NSObject+MethodSwizz.h */,
+				FC15B1401E61BAFA00F2314D /* NSObject+MethodSwizz.m */,
+				FC15B13C1E61B80D00F2314D /* NSObject+UnrecogniseMethod.h */,
+				FC15B13D1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m */,
+				FC15B1821E6412A400F2314D /* NSObject+KVOMethod.h */,
+				FC15B1831E6412A400F2314D /* NSObject+KVOMethod.m */,
+				FC15B1BE1E66B4D000F2314D /* NSObject+MitDealloc.h */,
+				FC15B1BF1E66B4D000F2314D /* NSObject+MitDealloc.m */,
+				FC15B1C71E66BBE500F2314D /* NSNotificationCenter+MitCrash.h */,
+				FC15B1C81E66BBE500F2314D /* NSNotificationCenter+MitCrash.m */,
+				FC15B1CA1E66BE1800F2314D /* NSTimer+MitCrash.h */,
+				FC15B1CB1E66BE1800F2314D /* NSTimer+MitCrash.m */,
+				FC15B1D61E66F2CA00F2314D /* NSArray+MitCrash.h */,
+				FC15B1D71E66F2CA00F2314D /* NSArray+MitCrash.m */,
+				FC15B1DC1E66F45700F2314D /* NSMutableArray+MitCrash.h */,
+				FC15B1DD1E66F45700F2314D /* NSMutableArray+MitCrash.m */,
+				FC15B1D91E66F39100F2314D /* NSDictionary+MitCrash.h */,
+				FC15B1DA1E66F39100F2314D /* NSDictionary+MitCrash.m */,
+				FC15B1DF1E66F7DE00F2314D /* NSMutableDictionary+MitCrash.h */,
+				FC15B1E01E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m */,
+				FC15B1E21E66FD5C00F2314D /* MitCrashHeader.h */,
+				FC15B1D01E66C0E100F2314D /* MitTimerSubOBJ.h */,
+				FC15B1D11E66C0E100F2314D /* MitTimerSubOBJ.m */,
+				FC15B1451E61CCBB00F2314D /* TestDemo.h */,
+				FC15B1461E61CCBB00F2314D /* TestDemo.m */,
+				FC15B1421E61BBDC00F2314D /* MitCrashHandler.h */,
+				FC15B1431E61BBDC00F2314D /* MitCrashHandler.m */,
+				FC15B12B1E61B7C300F2314D /* ViewController.h */,
+				FC15B12C1E61B7C300F2314D /* ViewController.m */,
+				FC15B1D31E66C71500F2314D /* ViewControllerTwo.h */,
+				FC15B1D41E66C71500F2314D /* ViewControllerTwo.m */,
+				FC15B12E1E61B7C300F2314D /* Main.storyboard */,
+				FC15B1311E61B7C300F2314D /* Assets.xcassets */,
+				FC15B1331E61B7C300F2314D /* LaunchScreen.storyboard */,
+				FC15B1361E61B7C300F2314D /* Info.plist */,
+				FC15B1251E61B7C300F2314D /* Supporting Files */,
+			);
+			path = CrashHook;
+			sourceTree = "<group>";
+		};
+		FC15B1251E61B7C300F2314D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC15B1261E61B7C300F2314D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC15B1211E61B7C300F2314D /* CrashHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC15B1391E61B7C300F2314D /* Build configuration list for PBXNativeTarget "CrashHook" */;
+			buildPhases = (
+				FC15B11E1E61B7C300F2314D /* Sources */,
+				FC15B11F1E61B7C300F2314D /* Frameworks */,
+				FC15B1201E61B7C300F2314D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrashHook;
+			productName = CrashHook;
+			productReference = FC15B1221E61B7C300F2314D /* CrashHook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC15B11A1E61B7C300F2314D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MENGCHEN;
+				TargetAttributes = {
+					FC15B1211E61B7C300F2314D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T43EX2XKU3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC15B11D1E61B7C300F2314D /* Build configuration list for PBXProject "CrashHook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC15B1191E61B7C300F2314D;
+			productRefGroup = FC15B1231E61B7C300F2314D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC15B1211E61B7C300F2314D /* CrashHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC15B1201E61B7C300F2314D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC15B1351E61B7C300F2314D /* LaunchScreen.storyboard in Resources */,
+				FC15B1321E61B7C300F2314D /* Assets.xcassets in Resources */,
+				FC15B1301E61B7C300F2314D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC15B11E1E61B7C300F2314D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC15B12D1E61B7C300F2314D /* ViewController.m in Sources */,
+				FC15B1441E61BBDC00F2314D /* MitCrashHandler.m in Sources */,
+				FC15B1471E61CCBB00F2314D /* TestDemo.m in Sources */,
+				FC15B1D21E66C0E100F2314D /* MitTimerSubOBJ.m in Sources */,
+				FC15B1DE1E66F45700F2314D /* NSMutableArray+MitCrash.m in Sources */,
+				FC15B1841E6412A400F2314D /* NSObject+KVOMethod.m in Sources */,
+				FC15B1CC1E66BE1800F2314D /* NSTimer+MitCrash.m in Sources */,
+				FC15B1D51E66C71500F2314D /* ViewControllerTwo.m in Sources */,
+				FC15B13E1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m in Sources */,
+				FC15B1C91E66BBE500F2314D /* NSNotificationCenter+MitCrash.m in Sources */,
+				FC15B1E11E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m in Sources */,
+				FC15B1C01E66B4D000F2314D /* NSObject+MitDealloc.m in Sources */,
+				FC15B1411E61BAFA00F2314D /* NSObject+MethodSwizz.m in Sources */,
+				FC15B1DB1E66F39100F2314D /* NSDictionary+MitCrash.m in Sources */,
+				FC15B12A1E61B7C300F2314D /* AppDelegate.m in Sources */,
+				FC15B1271E61B7C300F2314D /* main.m in Sources */,
+				FC15B1D81E66F2CA00F2314D /* NSArray+MitCrash.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC15B12E1E61B7C300F2314D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC15B12F1E61B7C300F2314D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC15B1331E61B7C300F2314D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC15B1341E61B7C300F2314D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC15B1371E61B7C300F2314D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC15B1381E61B7C300F2314D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC15B13A1E61B7C300F2314D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = CrashHook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mcking.CrashHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC15B13B1E61B7C300F2314D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T43EX2XKU3;
+				INFOPLIST_FILE = CrashHook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Mcking.CrashHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC15B11D1E61B7C300F2314D /* Build configuration list for PBXProject "CrashHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC15B1371E61B7C300F2314D /* Debug */,
+				FC15B1381E61B7C300F2314D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC15B1391E61B7C300F2314D /* Build configuration list for PBXNativeTarget "CrashHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC15B13A1E61B7C300F2314D /* Debug */,
+				FC15B13B1E61B7C300F2314D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC15B11A1E61B7C300F2314D /* Project object */;
+}

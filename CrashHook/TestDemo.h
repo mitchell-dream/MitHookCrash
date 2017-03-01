@@ -1,0 +1,13 @@
+//
+//  TestDemo.h
+//  CrashHook
+//
+//  Created by MENGCHEN on 2017/2/25.
+//  Copyright © 2017年 MENGCHEN. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+@interface TestDemo : NSObject
+
+@end

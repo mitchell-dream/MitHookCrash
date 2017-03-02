@@ -10,6 +10,7 @@
 #import "NSObject+MethodSwizz.h"
 #import "MitCrashHandler.h"
 @implementation NSNotificationCenter (MitCrash)
+
 + (void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -19,6 +20,7 @@
 }
 
 
+#pragma mark action 添加观察者
 - (void)MitCrash_addObserver:(id)observer selector:(SEL)aSelector name:(NSNotificationName)aName object:(id)anObject{
     [self MitCrash_addObserver:observer selector:aSelector name:aName object:anObject];
     if ([self conformsToProtocol:@protocol(MitCrashNotifyDelegate)]) {

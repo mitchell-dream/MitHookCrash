@@ -1,13 +1,13 @@
 //
-//  NSObject+MitDealloc.h
+//  NSObject+MitCrash.h
 //  CrashHook
 //
-//  Created by MENGCHEN on 2017/3/1.
+//  Created by MENGCHEN on 2017/3/2.
 //  Copyright © 2017年 MENGCHEN. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (MitDealloc)
+@interface NSObject (MitCrash)
 
 @end

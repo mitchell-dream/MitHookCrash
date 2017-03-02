@@ -13,12 +13,9 @@
 		FC15B1301E61B7C300F2314D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC15B12E1E61B7C300F2314D /* Main.storyboard */; };
 		FC15B1321E61B7C300F2314D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC15B1311E61B7C300F2314D /* Assets.xcassets */; };
 		FC15B1351E61B7C300F2314D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC15B1331E61B7C300F2314D /* LaunchScreen.storyboard */; };
-		FC15B13E1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B13D1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m */; };
 		FC15B1411E61BAFA00F2314D /* NSObject+MethodSwizz.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1401E61BAFA00F2314D /* NSObject+MethodSwizz.m */; };
 		FC15B1441E61BBDC00F2314D /* MitCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1431E61BBDC00F2314D /* MitCrashHandler.m */; };
 		FC15B1471E61CCBB00F2314D /* TestDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1461E61CCBB00F2314D /* TestDemo.m */; };
-		FC15B1841E6412A400F2314D /* NSObject+KVOMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1831E6412A400F2314D /* NSObject+KVOMethod.m */; };
-		FC15B1C01E66B4D000F2314D /* NSObject+MitDealloc.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1BF1E66B4D000F2314D /* NSObject+MitDealloc.m */; };
 		FC15B1C91E66BBE500F2314D /* NSNotificationCenter+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1C81E66BBE500F2314D /* NSNotificationCenter+MitCrash.m */; };
 		FC15B1CC1E66BE1800F2314D /* NSTimer+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1CB1E66BE1800F2314D /* NSTimer+MitCrash.m */; };
 		FC15B1D21E66C0E100F2314D /* MitTimerSubOBJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1D11E66C0E100F2314D /* MitTimerSubOBJ.m */; };
@@ -27,6 +24,7 @@
 		FC15B1DB1E66F39100F2314D /* NSDictionary+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1DA1E66F39100F2314D /* NSDictionary+MitCrash.m */; };
 		FC15B1DE1E66F45700F2314D /* NSMutableArray+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1DD1E66F45700F2314D /* NSMutableArray+MitCrash.m */; };
 		FC15B1E11E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1E01E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m */; };
+		FC15B1F91E679DF900F2314D /* NSObject+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1F81E679DF900F2314D /* NSObject+MitCrash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,18 +38,12 @@
 		FC15B1311E61B7C300F2314D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC15B1341E61B7C300F2314D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC15B1361E61B7C300F2314D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC15B13C1E61B80D00F2314D /* NSObject+UnrecogniseMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UnrecogniseMethod.h"; sourceTree = "<group>"; };
-		FC15B13D1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UnrecogniseMethod.m"; sourceTree = "<group>"; };
 		FC15B13F1E61BAFA00F2314D /* NSObject+MethodSwizz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizz.h"; sourceTree = "<group>"; };
 		FC15B1401E61BAFA00F2314D /* NSObject+MethodSwizz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizz.m"; sourceTree = "<group>"; };
 		FC15B1421E61BBDC00F2314D /* MitCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MitCrashHandler.h; sourceTree = "<group>"; };
 		FC15B1431E61BBDC00F2314D /* MitCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MitCrashHandler.m; sourceTree = "<group>"; };
 		FC15B1451E61CCBB00F2314D /* TestDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDemo.h; sourceTree = "<group>"; };
 		FC15B1461E61CCBB00F2314D /* TestDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDemo.m; sourceTree = "<group>"; };
-		FC15B1821E6412A400F2314D /* NSObject+KVOMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOMethod.h"; sourceTree = "<group>"; };
-		FC15B1831E6412A400F2314D /* NSObject+KVOMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOMethod.m"; sourceTree = "<group>"; };
-		FC15B1BE1E66B4D000F2314D /* NSObject+MitDealloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitDealloc.h"; sourceTree = "<group>"; };
-		FC15B1BF1E66B4D000F2314D /* NSObject+MitDealloc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitDealloc.m"; sourceTree = "<group>"; };
 		FC15B1C71E66BBE500F2314D /* NSNotificationCenter+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+MitCrash.h"; sourceTree = "<group>"; };
 		FC15B1C81E66BBE500F2314D /* NSNotificationCenter+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+MitCrash.m"; sourceTree = "<group>"; };
 		FC15B1CA1E66BE1800F2314D /* NSTimer+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MitCrash.h"; sourceTree = "<group>"; };
@@ -69,6 +61,8 @@
 		FC15B1DF1E66F7DE00F2314D /* NSMutableDictionary+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MitCrash.h"; sourceTree = "<group>"; };
 		FC15B1E01E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MitCrash.m"; sourceTree = "<group>"; };
 		FC15B1E21E66FD5C00F2314D /* MitCrashHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MitCrashHeader.h; sourceTree = "<group>"; };
+		FC15B1F71E679DF900F2314D /* NSObject+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitCrash.h"; sourceTree = "<group>"; };
+		FC15B1F81E679DF900F2314D /* NSObject+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitCrash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +99,8 @@
 				FC15B1291E61B7C300F2314D /* AppDelegate.m */,
 				FC15B13F1E61BAFA00F2314D /* NSObject+MethodSwizz.h */,
 				FC15B1401E61BAFA00F2314D /* NSObject+MethodSwizz.m */,
-				FC15B13C1E61B80D00F2314D /* NSObject+UnrecogniseMethod.h */,
-				FC15B13D1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m */,
-				FC15B1821E6412A400F2314D /* NSObject+KVOMethod.h */,
-				FC15B1831E6412A400F2314D /* NSObject+KVOMethod.m */,
-				FC15B1BE1E66B4D000F2314D /* NSObject+MitDealloc.h */,
-				FC15B1BF1E66B4D000F2314D /* NSObject+MitDealloc.m */,
+				FC15B1F71E679DF900F2314D /* NSObject+MitCrash.h */,
+				FC15B1F81E679DF900F2314D /* NSObject+MitCrash.m */,
 				FC15B1C71E66BBE500F2314D /* NSNotificationCenter+MitCrash.h */,
 				FC15B1C81E66BBE500F2314D /* NSNotificationCenter+MitCrash.m */,
 				FC15B1CA1E66BE1800F2314D /* NSTimer+MitCrash.h */,
@@ -227,14 +217,12 @@
 				FC15B1441E61BBDC00F2314D /* MitCrashHandler.m in Sources */,
 				FC15B1471E61CCBB00F2314D /* TestDemo.m in Sources */,
 				FC15B1D21E66C0E100F2314D /* MitTimerSubOBJ.m in Sources */,
+				FC15B1F91E679DF900F2314D /* NSObject+MitCrash.m in Sources */,
 				FC15B1DE1E66F45700F2314D /* NSMutableArray+MitCrash.m in Sources */,
-				FC15B1841E6412A400F2314D /* NSObject+KVOMethod.m in Sources */,
 				FC15B1CC1E66BE1800F2314D /* NSTimer+MitCrash.m in Sources */,
 				FC15B1D51E66C71500F2314D /* ViewControllerTwo.m in Sources */,
-				FC15B13E1E61B80D00F2314D /* NSObject+UnrecogniseMethod.m in Sources */,
 				FC15B1C91E66BBE500F2314D /* NSNotificationCenter+MitCrash.m in Sources */,
 				FC15B1E11E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m in Sources */,
-				FC15B1C01E66B4D000F2314D /* NSObject+MitDealloc.m in Sources */,
 				FC15B1411E61BAFA00F2314D /* NSObject+MethodSwizz.m in Sources */,
 				FC15B1DB1E66F39100F2314D /* NSDictionary+MitCrash.m in Sources */,
 				FC15B12A1E61B7C300F2314D /* AppDelegate.m in Sources */,

@@ -20,7 +20,7 @@
         [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(addObject:) new:@selector(MitCrash_addObject:)];
         //插入
         [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(insertObject:atIndex:) new:@selector(MitCrash_insertObject:atIndex:)];
-//        //替换
+        //替换
         [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(replaceObjectAtIndex:withObject:) new:@selector(MitCrash_replaceObjectAtIndex:withObject:)];
     });
 

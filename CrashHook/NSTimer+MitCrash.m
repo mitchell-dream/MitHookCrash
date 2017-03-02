@@ -13,20 +13,6 @@
 #import <objc/runtime.h>
 @implementation NSTimer (MitCrash)
 +(void)load{
-//    static dispatch_once_t onceToken;
-//    dispatch_once(&onceToken, ^{
-//        [NSObject swizzleMethod:[self class] origin:@selector(scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:) new:@selector(MitCrash_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:)];
-//        Class cls = [self class];
-//        if(class_addMethod(cls, @selector(MitCrash_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:),class_getMethodImplementation(cls, @selector(MitCrash_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:)), "#d@:@B")){
-//            //原来的方法
-//            Method dis_originalMethod = class_getInstanceMethod(cls,@selector(scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:));
-//            //现在的方法
-//            Method dis_swizzledMethod = class_getInstanceMethod(cls, @selector(MitCrash_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:));
-//            //交换实现
-//            method_exchangeImplementations(dis_originalMethod, dis_swizzledMethod);
-//        }
-//    });
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSError * err = nil;

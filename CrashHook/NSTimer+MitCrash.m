@@ -8,7 +8,7 @@
 
 #import "NSTimer+MitCrash.h"
 #import "NSObject+MethodSwizz.h"
-#import "MitTimerSubOBJ.h"
+#import "MitTimer.h"
 #import "MitCrashHandler.h"
 #import <objc/runtime.h>
 @implementation NSTimer (MitCrash)
@@ -30,7 +30,7 @@
     if (!yesOrNo) {
         return [self MitCrash_scheduledTimerWithTimeInterval:ti target:aTarget selector:aSelector userInfo:userInfo repeats:yesOrNo];
     } else {
-        MitTimerSubOBJ * obj = [MitTimerSubOBJ new];
+        MitTimer * obj = [MitTimer new];
         obj.target = aTarget;
         obj.selector = NSStringFromSelector(aSelector);
         //针对 timer 的循环引用是由于， timer 会强引用 target，这时创建中间类，中间类作为 timer 的 target，中间类保留原始 target 的一个弱引用，这时如果target 释放掉了，那么中间类会发现没有 target，那么就回调，解除定时器

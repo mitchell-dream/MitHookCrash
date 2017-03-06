@@ -11,15 +11,12 @@
 @implementation UIView (MitCrash)
 
 +(void)load{
-    
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [NSObject swizzleMethod:[self class] origin:@selector(setNeedsLayout) new:@selector(MitCrash_setNeedsLayout)];
         [NSObject swizzleMethod:[self class] origin:@selector(setNeedsDisplay) new:@selector(MitCrash_setNeedsDisplay)];
         [NSObject swizzleMethod:[self class] origin:@selector(setNeedsDisplayInRect:) new:@selector(MitCrash_setNeedsDisplayInRect:)];
     });
-
-    
 }
 
 #pragma mark action 将一些方法放到主线程来进行

@@ -1,5 +1,5 @@
 //
-//  MitTimerSubOBJ.h
+//  MitTimer.h
 //  CrashHook
 //
 //  Created by MENGCHEN on 2017/3/1.
@@ -11,7 +11,7 @@
 
 typedef void (^CallBack)(BOOL isInvalidate);
 
-@interface MitTimerSubOBJ : NSObject
+@interface MitTimer : NSObject
 
 /**  target */
 @property(nonatomic, weak)id  target;

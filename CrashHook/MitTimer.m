@@ -1,14 +1,14 @@
 //
-//  MitTimerSubOBJ.m
+//  MitTimer.m
 //  CrashHook
 //
 //  Created by MENGCHEN on 2017/3/1.
 //  Copyright © 2017年 MENGCHEN. All rights reserved.
 //
 
-#import "MitTimerSubOBJ.h"
+#import "MitTimer.h"
 
-@implementation MitTimerSubOBJ
+@implementation MitTimer
 
 
 -(void)forward{

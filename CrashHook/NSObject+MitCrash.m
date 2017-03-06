@@ -134,11 +134,6 @@ static  NSString * kZombieValue = @"kZombieValue";
             [[MitCrashHandler sharedManager].NotiMaps removeAllObjects];
         }
     }
-    //僵尸对象
-    if ([self conformsToProtocol:@protocol(MitCrashZombieDelegate)]&&[objc_getAssociatedObject(self, &kZombieKey) isEqualToString:kZombieValue]) {
-        [MitZombieCatcher forwardingTargetForSelector:@selector(handleZombieInstance:)];
-        
-    }
     [self MitCrash_dealloc];
 }
 @end

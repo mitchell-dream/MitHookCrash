@@ -19,7 +19,6 @@ typedef void (^CallBack)(BOOL isInvalidate);
 @property(nonatomic, weak)NSString * selector;
 /**  userinfo */
 @property(nonatomic, weak)id userInfo;
-
 /** 回调 */
 @property(nonatomic, copy) CallBack callBack;
 

@@ -30,7 +30,6 @@ typedef struct unfreeList {
     size_t      unfree_count;
     size_t      unfree_size;
 }UNFREE_LIST, *PUNFREE_LIST;
-
 //原始方法
 void (*orig_free)(void *);
 //释放方法
@@ -76,7 +75,6 @@ void startWildPointerCheck()
     pthread_mutex_init(&global_mutex, NULL);
     //hook free
     rebind_symbols((struct rebinding[1]){{"free", myfree, (void *)&orig_free}}, 1);
-    
     isRunningWildPointerCheck = YES;
 }
 

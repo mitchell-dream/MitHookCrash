@@ -9,6 +9,8 @@
 #import "NSObject+MitCrash.h"
 #import "NSObject+MethodSwizz.h"
 #import "MitCrashHandler.h"
+#import <objc/runtime.h>
+#import "MitZombieCatcher.h"
 @implementation NSObject (MitCrash)
 + (void)load{
     static dispatch_once_t onceToken;
@@ -21,8 +23,23 @@
         [NSObject swizzleMethod:[self class] origin:@selector(removeObserver:forKeyPath:) new:@selector(mitCrash_removeObserver:forKeyPath:)];
         //unrecogniseMethod
         [NSObject swizzleMethod:[self class] origin:@selector(forwardingTargetForSelector:) new:@selector(mitCrash_forwardingTargetForSelector:)];
+        
+        //僵尸对象
+        NSError * err = nil;
+        [self swizzleClassMethod:@selector(allocWithZone:) withClassMethod:@selector(MitCrash_allocWithZone:) error:&err];
+        
 
     });
+}
+
+static  NSString * kZombieKey = @"kZombieKey";
+static  NSString * kZombieValue = @"kZombieValue";
+
++ (instancetype)MitCrash_allocWithZone:(struct _NSZone *)zone{
+    if ([self conformsToProtocol:@protocol(MitCrashZombieDelegate)]) {
+        objc_setAssociatedObject(self, &kZombieKey, kZombieValue, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return [self MitCrash_allocWithZone:zone];
 }
 
 #pragma mark action 修补 unRecognized crash
@@ -101,6 +118,7 @@
     }
 }
 
+
 #pragma mark action dealloc
 - (void)MitCrash_dealloc{    
     if ([self conformsToProtocol:@protocol(MitCrashKVODelegate)]) {
@@ -116,7 +134,11 @@
             [[MitCrashHandler sharedManager].NotiMaps removeAllObjects];
         }
     }
-    
+    //僵尸对象
+    if ([self conformsToProtocol:@protocol(MitCrashZombieDelegate)]&&[objc_getAssociatedObject(self, &kZombieKey) isEqualToString:kZombieValue]) {
+        [MitZombieCatcher forwardingTargetForSelector:@selector(handleZombieInstance:)];
+        
+    }
     [self MitCrash_dealloc];
 }
 @end

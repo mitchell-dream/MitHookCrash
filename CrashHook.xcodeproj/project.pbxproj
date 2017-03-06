@@ -25,6 +25,10 @@
 		FC15B1DE1E66F45700F2314D /* NSMutableArray+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1DD1E66F45700F2314D /* NSMutableArray+MitCrash.m */; };
 		FC15B1E11E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1E01E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m */; };
 		FC15B1F91E679DF900F2314D /* NSObject+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1F81E679DF900F2314D /* NSObject+MitCrash.m */; };
+		FC15B1FC1E67BAB200F2314D /* MitZombieCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1FB1E67BAB200F2314D /* MitZombieCatcher.m */; };
+		FC15B1FF1E6B0D0000F2314D /* UIView+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B1FE1E6B0D0000F2314D /* UIView+MitCrash.m */; };
+		FC15B2021E6BCC6B00F2314D /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = FC15B2001E6BCC6B00F2314D /* fishhook.c */; };
+		FC15B2051E6BCCDE00F2314D /* MitPointerChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = FC15B2041E6BCCDE00F2314D /* MitPointerChecker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +67,14 @@
 		FC15B1E21E66FD5C00F2314D /* MitCrashHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MitCrashHeader.h; sourceTree = "<group>"; };
 		FC15B1F71E679DF900F2314D /* NSObject+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitCrash.h"; sourceTree = "<group>"; };
 		FC15B1F81E679DF900F2314D /* NSObject+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B1FA1E67BAB200F2314D /* MitZombieCatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MitZombieCatcher.h; sourceTree = "<group>"; };
+		FC15B1FB1E67BAB200F2314D /* MitZombieCatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MitZombieCatcher.m; sourceTree = "<group>"; };
+		FC15B1FD1E6B0D0000F2314D /* UIView+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MitCrash.h"; sourceTree = "<group>"; };
+		FC15B1FE1E6B0D0000F2314D /* UIView+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B2001E6BCC6B00F2314D /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		FC15B2011E6BCC6B00F2314D /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		FC15B2031E6BCCDE00F2314D /* MitPointerChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MitPointerChecker.h; sourceTree = "<group>"; };
+		FC15B2041E6BCCDE00F2314D /* MitPointerChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MitPointerChecker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,14 +107,22 @@
 		FC15B1241E61B7C300F2314D /* CrashHook */ = {
 			isa = PBXGroup;
 			children = (
+				FC15B2001E6BCC6B00F2314D /* fishhook.c */,
+				FC15B2011E6BCC6B00F2314D /* fishhook.h */,
 				FC15B1281E61B7C300F2314D /* AppDelegate.h */,
 				FC15B1291E61B7C300F2314D /* AppDelegate.m */,
 				FC15B13F1E61BAFA00F2314D /* NSObject+MethodSwizz.h */,
 				FC15B1401E61BAFA00F2314D /* NSObject+MethodSwizz.m */,
 				FC15B1F71E679DF900F2314D /* NSObject+MitCrash.h */,
 				FC15B1F81E679DF900F2314D /* NSObject+MitCrash.m */,
+				FC15B1FA1E67BAB200F2314D /* MitZombieCatcher.h */,
+				FC15B1FB1E67BAB200F2314D /* MitZombieCatcher.m */,
+				FC15B2031E6BCCDE00F2314D /* MitPointerChecker.h */,
+				FC15B2041E6BCCDE00F2314D /* MitPointerChecker.m */,
 				FC15B1C71E66BBE500F2314D /* NSNotificationCenter+MitCrash.h */,
 				FC15B1C81E66BBE500F2314D /* NSNotificationCenter+MitCrash.m */,
+				FC15B1FD1E6B0D0000F2314D /* UIView+MitCrash.h */,
+				FC15B1FE1E6B0D0000F2314D /* UIView+MitCrash.m */,
 				FC15B1CA1E66BE1800F2314D /* NSTimer+MitCrash.h */,
 				FC15B1CB1E66BE1800F2314D /* NSTimer+MitCrash.m */,
 				FC15B1D61E66F2CA00F2314D /* NSArray+MitCrash.h */,
@@ -113,13 +133,13 @@
 				FC15B1DA1E66F39100F2314D /* NSDictionary+MitCrash.m */,
 				FC15B1DF1E66F7DE00F2314D /* NSMutableDictionary+MitCrash.h */,
 				FC15B1E01E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m */,
+				FC15B1421E61BBDC00F2314D /* MitCrashHandler.h */,
+				FC15B1431E61BBDC00F2314D /* MitCrashHandler.m */,
 				FC15B1E21E66FD5C00F2314D /* MitCrashHeader.h */,
 				FC15B1D01E66C0E100F2314D /* MitTimerSubOBJ.h */,
 				FC15B1D11E66C0E100F2314D /* MitTimerSubOBJ.m */,
 				FC15B1451E61CCBB00F2314D /* TestDemo.h */,
 				FC15B1461E61CCBB00F2314D /* TestDemo.m */,
-				FC15B1421E61BBDC00F2314D /* MitCrashHandler.h */,
-				FC15B1431E61BBDC00F2314D /* MitCrashHandler.m */,
 				FC15B12B1E61B7C300F2314D /* ViewController.h */,
 				FC15B12C1E61B7C300F2314D /* ViewController.m */,
 				FC15B1D31E66C71500F2314D /* ViewControllerTwo.h */,
@@ -216,15 +236,19 @@
 				FC15B12D1E61B7C300F2314D /* ViewController.m in Sources */,
 				FC15B1441E61BBDC00F2314D /* MitCrashHandler.m in Sources */,
 				FC15B1471E61CCBB00F2314D /* TestDemo.m in Sources */,
+				FC15B2051E6BCCDE00F2314D /* MitPointerChecker.m in Sources */,
 				FC15B1D21E66C0E100F2314D /* MitTimerSubOBJ.m in Sources */,
+				FC15B2021E6BCC6B00F2314D /* fishhook.c in Sources */,
 				FC15B1F91E679DF900F2314D /* NSObject+MitCrash.m in Sources */,
 				FC15B1DE1E66F45700F2314D /* NSMutableArray+MitCrash.m in Sources */,
 				FC15B1CC1E66BE1800F2314D /* NSTimer+MitCrash.m in Sources */,
+				FC15B1FC1E67BAB200F2314D /* MitZombieCatcher.m in Sources */,
 				FC15B1D51E66C71500F2314D /* ViewControllerTwo.m in Sources */,
 				FC15B1C91E66BBE500F2314D /* NSNotificationCenter+MitCrash.m in Sources */,
 				FC15B1E11E66F7DE00F2314D /* NSMutableDictionary+MitCrash.m in Sources */,
 				FC15B1411E61BAFA00F2314D /* NSObject+MethodSwizz.m in Sources */,
 				FC15B1DB1E66F39100F2314D /* NSDictionary+MitCrash.m in Sources */,
+				FC15B1FF1E6B0D0000F2314D /* UIView+MitCrash.m in Sources */,
 				FC15B12A1E61B7C300F2314D /* AppDelegate.m in Sources */,
 				FC15B1271E61B7C300F2314D /* main.m in Sources */,
 				FC15B1D81E66F2CA00F2314D /* NSArray+MitCrash.m in Sources */,
@@ -384,6 +408,7 @@
 				FC15B13B1E61B7C300F2314D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

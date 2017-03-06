@@ -12,7 +12,7 @@
 //不能识别方法的函数指针
 void MithandleUnRecognise ( SEL _cmd);
 
-
+void MithandleZombie(SEL _cmd);
 @protocol MitCrashKVODelegate <NSObject>
 
 
@@ -20,6 +20,12 @@ void MithandleUnRecognise ( SEL _cmd);
 @end
 
 @protocol MitCrashNotifyDelegate <NSObject>
+
+
+
+@end
+
+@protocol MitCrashZombieDelegate <NSObject>
 
 
 

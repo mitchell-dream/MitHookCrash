@@ -12,12 +12,31 @@
 #import "MitCrashHandler.h"
 #import "ViewControllerTwo.h"
 #import "MitCrashHeader.h"
+#import "MitZombieCatcher.h"
+#import "MitPointerChecker.h"
 
+@interface FooCls : NSObject
+
+- (void)xxxxxxx;
+
+@end
+
+
+@implementation FooCls
+- (void)xxxxxxx{
+    
+    NSLog(@"xxx");
+}
+
+@end
 
 @interface ViewController ()<MitCrashKVODelegate,MitCrashNotifyDelegate>
 
 /**  <#Description#> */
 @property(nonatomic, assign)NSInteger num;
+
+@property (nonatomic, assign) id delegate;
+
 
 @end
 
@@ -47,7 +66,6 @@
     
     
     NSArray * arr = @[@"1",@"2"];
-    
     NSLog(@"%@",[arr objectAtIndex:3]);
     NSMutableArray * arr2  =[NSMutableArray arrayWithObjects:@"3",@"4", nil];
     NSLog(@"%@",[arr2 objectAtIndex:3]);
@@ -60,6 +78,13 @@
     NSMutableDictionary * dic2 = [NSMutableDictionary dictionaryWithDictionary:dic];
     [dic2 setObject:nil forKey:@"1"];
     [dic2 setObject:@"1" forKey:nil];
+    
+    startWildPointerCheck();
+    FooCls * c = [FooCls new];
+    self.delegate = c;
+    c = nil;
+    [self.delegate xxxxxxx];
+    
 
     
     

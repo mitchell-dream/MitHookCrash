@@ -18,7 +18,6 @@
 #pragma mark action 处理类和消息
 + (void)handleCrashCls:(Class)cls message:(NSString *)msg sel:(SEL)selector{
     NSLog(@"class %@ | sel:%@ | message: %@",NSStringFromClass(cls),msg,NSStringFromSelector(selector));
-    
 }
 
 
@@ -26,6 +25,9 @@
 
 void MithandleUnRecognise ( SEL _cmd){
     NSLog(@" call unRecognised function %@",NSStringFromSelector(_cmd));
+}
+void MithandleZombie ( SEL _cmd){
+    NSLog(@" find wild Pointer  %@",NSStringFromSelector(_cmd));
 }
 
 +(instancetype)sharedManager{

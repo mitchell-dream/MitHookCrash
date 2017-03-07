@@ -7,16 +7,20 @@
 //
 
 #import "NSArray+MitCrash.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 #import "MitCrashHandler.h"
+#import "MitCrashConfig.h"
 @implementation NSArray (MitCrash)
 
 +(void)load{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [NSObject swizzleMethod:NSClassFromString(@"__NSArrayI") origin:@selector(objectAtIndex:) new:@selector(MitCrash_objectAtIndex:)];
+    //container
+    if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_CONTAIN_KEY] boolValue]) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            [NSObject swizzleMethod:NSClassFromString(@"__NSArrayI") origin:@selector(objectAtIndex:) new:@selector(MitCrash_objectAtIndex:)];
+        });
+    }
 
-    });
 }
 
 #pragma mark action 获取第几个元素

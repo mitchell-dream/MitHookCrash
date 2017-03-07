@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSObject+UnrecogniseMethod.h"
+
 #import "TestDemo.h"
 #import "MitCrashHandler.h"
 #import "ViewControllerTwo.h"
@@ -79,7 +79,7 @@
     [dic2 setObject:nil forKey:@"1"];
     [dic2 setObject:@"1" forKey:nil];
     
-    startWildPointerCheck();
+//    startWildPointerCheck();
     FooCls * c = [FooCls new];
     self.delegate = c;
     c = nil;

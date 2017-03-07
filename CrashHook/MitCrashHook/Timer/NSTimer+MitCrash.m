@@ -7,18 +7,22 @@
 //
 
 #import "NSTimer+MitCrash.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 #import "MitTimer.h"
 #import "MitCrashHandler.h"
 #import <objc/runtime.h>
+#import "MitCrashConfig.h"
 @implementation NSTimer (MitCrash)
 +(void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        NSError * err = nil;
-        [self swizzleClassMethod:@selector(scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:) withClassMethod:@selector(MitCrash_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:) error:&err];
-        if (err) {
-            NSLog(@"替换错误 = %@",err);
+        //timer
+        if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_TIMER_KEY] boolValue]) {
+            NSError * err = nil;
+            [self swizzleClassMethod:@selector(scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:) withClassMethod:@selector(MitCrash_scheduledTimerWithTimeInterval:target:selector:userInfo:repeats:) error:&err];
+            if (err) {
+                NSLog(@"timer 替换错误 = %@",err);
+            }
         }
     });
 }

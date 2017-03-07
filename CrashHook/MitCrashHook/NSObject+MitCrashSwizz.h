@@ -1,5 +1,5 @@
 //
-//  NSObject+MethodSwizz.h
+//  NSObject+MitCrashSwizz.h
 //  CrashHook
 //
 //  Created by MENGCHEN on 2017/2/25.

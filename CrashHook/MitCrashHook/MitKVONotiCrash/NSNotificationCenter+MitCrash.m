@@ -7,16 +7,19 @@
 //
 
 #import "NSNotificationCenter+MitCrash.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 #import "MitCrashHandler.h"
+#import "MitCrashConfig.h"
 @implementation NSNotificationCenter (MitCrash)
 
 + (void)load{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [NSObject swizzleMethod:[self class] origin:@selector(addObserver:selector:name:object:) new:@selector(MitCrash_addObserver:selector:name:object:)];
-
-    });
+    //通知
+    if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_NOTI_KEY] boolValue]) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            [NSObject swizzleMethod:[self class] origin:@selector(addObserver:selector:name:object:) new:@selector(MitCrash_addObserver:selector:name:object:)];
+        });
+    }
 }
 
 

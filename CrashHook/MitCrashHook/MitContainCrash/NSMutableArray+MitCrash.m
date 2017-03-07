@@ -7,22 +7,25 @@
 //
 
 #import "NSMutableArray+MitCrash.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 #import "MitCrashHandler.h"
+#import "MitCrashConfig.h"
 @implementation NSMutableArray (MitCrash)
 + (void)load{
-    
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        //取
-        [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(objectAtIndex:) new:@selector(MitCrash_objectAtIndex:)];
-        //增
-        [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(addObject:) new:@selector(MitCrash_addObject:)];
-        //插入
-        [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(insertObject:atIndex:) new:@selector(MitCrash_insertObject:atIndex:)];
-        //替换
-        [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(replaceObjectAtIndex:withObject:) new:@selector(MitCrash_replaceObjectAtIndex:withObject:)];
-    });
+    //container
+    if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_CONTAIN_KEY] boolValue]) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            //取
+            [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(objectAtIndex:) new:@selector(MitCrash_objectAtIndex:)];
+            //增
+            [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(addObject:) new:@selector(MitCrash_addObject:)];
+            //插入
+            [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(insertObject:atIndex:) new:@selector(MitCrash_insertObject:atIndex:)];
+            //替换
+            [NSObject swizzleMethod:NSClassFromString(@"__NSArrayM") origin:@selector(replaceObjectAtIndex:withObject:) new:@selector(MitCrash_replaceObjectAtIndex:withObject:)];
+        });
+    }
 
 
 

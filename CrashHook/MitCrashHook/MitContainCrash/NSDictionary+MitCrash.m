@@ -7,14 +7,18 @@
 //
 
 #import "NSDictionary+MitCrash.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 #import "MitCrashHandler.h"
+#import "MitCrashConfig.h"
 @implementation NSDictionary (MitCrash)
 + (void)load{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [NSObject swizzleMethod:NSClassFromString(@"__NSDictionaryI") origin:@selector(objectForKey:) new:@selector(MitCrash_objectForKey:)];
-    });
+    //container
+    if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_CONTAIN_KEY] boolValue]) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            [NSObject swizzleMethod:NSClassFromString(@"__NSDictionaryI") origin:@selector(objectForKey:) new:@selector(MitCrash_objectForKey:)];
+        });
+    }
 }
 
 #pragma mark action 移除 key

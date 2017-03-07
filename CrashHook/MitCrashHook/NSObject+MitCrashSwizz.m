@@ -1,12 +1,12 @@
 //
-//  NSObject+MethodSwizz.m
+//  NSObject+MitCrashSwizz.m
 //  CrashHook
 //
 //  Created by MENGCHEN on 2017/2/25.
 //  Copyright © 2017年 MENGCHEN. All rights reserved.
 //
 
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 
 @implementation NSObject (MethodSwizz)
 +(void)swizzleMethod:(Class)cls origin:(SEL)originSelector new:(SEL)newSelector{

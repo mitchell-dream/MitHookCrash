@@ -7,7 +7,7 @@
 //
 
 #import "UIView+MitCrash.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 @implementation UIView (MitCrash)
 
 +(void)load{

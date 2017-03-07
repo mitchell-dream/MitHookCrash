@@ -7,28 +7,36 @@
 //
 
 #import "NSObject+MitCrash.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 #import "MitCrashHandler.h"
 #import <objc/runtime.h>
 #import "MitZombieCatcher.h"
+#import "MitCrashConfig.h"
 @implementation NSObject (MitCrash)
 + (void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         //dealloc
         [NSObject swizzleMethod:[self class] origin:NSSelectorFromString(@"dealloc") new:@selector(MitCrash_dealloc)];
-        //添加观察者
-        [NSObject swizzleMethod:[self class] origin:@selector(addObserver:forKeyPath:options:context:) new:@selector(mitCrash_addObserver:forKeyPath:options:context:)];
-        //移除观察者
-        [NSObject swizzleMethod:[self class] origin:@selector(removeObserver:forKeyPath:) new:@selector(mitCrash_removeObserver:forKeyPath:)];
+        //观察者
+        if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_NOTI_KEY] boolValue]) {
+            //添加观察者
+            [NSObject swizzleMethod:[self class] origin:@selector(addObserver:forKeyPath:options:context:) new:@selector(mitCrash_addObserver:forKeyPath:options:context:)];
+            //移除观察者
+            [NSObject swizzleMethod:[self class] origin:@selector(removeObserver:forKeyPath:) new:@selector(mitCrash_removeObserver:forKeyPath:)];
+        }
+
+
         //unrecogniseMethod
-        [NSObject swizzleMethod:[self class] origin:@selector(forwardingTargetForSelector:) new:@selector(mitCrash_forwardingTargetForSelector:)];
+        if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_UNRECOG_KEY] boolValue]) {
+            [NSObject swizzleMethod:[self class] origin:@selector(forwardingTargetForSelector:) new:@selector(mitCrash_forwardingTargetForSelector:)];
+        }
         
         //僵尸对象
-        NSError * err = nil;
-        [self swizzleClassMethod:@selector(allocWithZone:) withClassMethod:@selector(MitCrash_allocWithZone:) error:&err];
-        
-
+        if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_ZOBIE_KEY] boolValue]) {
+            NSError * err = nil;
+            [self swizzleClassMethod:@selector(allocWithZone:) withClassMethod:@selector(MitCrash_allocWithZone:) error:&err];
+        }
     });
 }
 

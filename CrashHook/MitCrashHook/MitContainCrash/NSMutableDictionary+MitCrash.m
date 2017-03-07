@@ -8,16 +8,21 @@
 
 #import "NSMutableDictionary+MitCrash.h"
 #import "MitCrashHandler.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
+#import "MitCrashConfig.h"
 
 
 @implementation NSMutableDictionary (MitCrash)
 + (void)load{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [NSObject swizzleMethod:NSClassFromString(@"__NSDictionaryM") origin:@selector(setValue:forKey:) new:@selector(MitCrash_setValue:forKey:)];
-        [NSObject swizzleMethod:NSClassFromString(@"__NSDictionaryM") origin:@selector(setObject:forKey:) new:@selector(MitCrash_setObject:forKey:)];
-    });
+    
+    //container
+    if ([[MITCRASHMANAGER.handleConfig objectForKey:MitCrash_CONTAIN_KEY] boolValue]) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            [NSObject swizzleMethod:NSClassFromString(@"__NSDictionaryM") origin:@selector(setValue:forKey:) new:@selector(MitCrash_setValue:forKey:)];
+            [NSObject swizzleMethod:NSClassFromString(@"__NSDictionaryM") origin:@selector(setObject:forKey:) new:@selector(MitCrash_setObject:forKey:)];
+        });
+    }
 }
 
 -(void)MitCrash_setValue:(id)value forKey:(NSString *)key{

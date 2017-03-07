@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
-  s.name         = 'MitCrashHook'
+  s.name         = 'MITCrashHook'
   s.version      = '0.0.1'
-  s.summary      = 'MitCrashHook summary'
+  s.summary      = 'MITCrashHook summary'
   s.homepage     = 'https://github.com/mcmengchen'
   s.license      = 'MIT'
   s.authors      = {'mcmengchen' => '416922992@qq.com'}

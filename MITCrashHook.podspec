@@ -6,9 +6,10 @@ Pod::Spec.new do |s|
   s.homepage     = 'https://github.com/mcmengchen'
   s.license      = 'MIT'
   s.authors      = {'mcmengchen' => '416922992@qq.com'}
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.source       = {:git => 'https://github.com/mcmengchen/MitHookCrash.git', :tag => s.version}
-  s.source_files = 'CrashHook/MitCrashHook/**/*.{h,m}','CrashHook/MitCrashHook/*.{h,m}'
+  s.source_files = 'CrashHook/MitCrashHook/**/*.{h,m}'
+  s.libraries    = 'c','c++'
   s.frameworks   = 'UIKit', 'Foundation'
   s.requires_arc = true
 end

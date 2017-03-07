@@ -80,6 +80,8 @@
 		FC15B2BF1E6E7ECE00F2314D /* MitCrashConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MitCrashConfig.plist; sourceTree = "<group>"; };
 		FC15B2C31E6E7EF900F2314D /* UIView+MitCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MitCrash.h"; sourceTree = "<group>"; };
 		FC15B2C41E6E7EF900F2314D /* UIView+MitCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MitCrash.m"; sourceTree = "<group>"; };
+		FC15B2C71E6E984600F2314D /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		FC15B2C91E6E985000F2314D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				FC15B1241E61B7C300F2314D /* CrashHook */,
 				FC15B1231E61B7C300F2314D /* Products */,
+				FC15B2C61E6E984500F2314D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -234,6 +237,15 @@
 				FC15B2C41E6E7EF900F2314D /* UIView+MitCrash.m */,
 			);
 			path = MitCrashView;
+			sourceTree = "<group>";
+		};
+		FC15B2C61E6E984500F2314D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC15B2C91E6E985000F2314D /* libc++.tbd */,
+				FC15B2C71E6E984600F2314D /* libc.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

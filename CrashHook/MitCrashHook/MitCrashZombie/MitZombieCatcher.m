@@ -13,8 +13,6 @@
 #import "MitCrashHandler.h"
 @implementation MitZombieCatcher
 
-
-
 - (id)forwardingTargetForSelector:(SEL)aSelector{
     NSLog(@"发现野指针：%s%@%@",class_getName(self.originCls),self,NSStringFromSelector(aSelector));
     class_addMethod([MitCrashHandler class], aSelector,(IMP)MithandleZombie, "v#:@");

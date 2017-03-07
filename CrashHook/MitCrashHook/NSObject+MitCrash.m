@@ -10,7 +10,6 @@
 #import "NSObject+MitCrashSwizz.h"
 #import "MitCrashHandler.h"
 #import <objc/runtime.h>
-#import "MitZombieCatcher.h"
 #import "MitCrashConfig.h"
 @implementation NSObject (MitCrash)
 + (void)load{

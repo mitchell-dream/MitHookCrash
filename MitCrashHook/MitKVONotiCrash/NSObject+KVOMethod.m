@@ -7,7 +7,7 @@
 //
 
 #import "NSObject+KVOMethod.h"
-#import "NSObject+MethodSwizz.h"
+#import "NSObject+MitCrashSwizz.h"
 #import "MitCrashHandler.h"
 #import <objc/runtime.h>
 #import <UIKit/UIKit.h>

@@ -1,0 +1,19 @@
+PODS:
+  - fishhook (0.2)
+  - MITCrashHook (0.0.1):
+    - fishhook
+
+DEPENDENCIES:
+  - MITCrashHook (from `../`)
+
+EXTERNAL SOURCES:
+  MITCrashHook:
+    :path: ../
+
+SPEC CHECKSUMS:
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  MITCrashHook: 78f285e69bb0bd8dd1ca598a8b14304bb79da511
+
+PODFILE CHECKSUM: 819dadeb6535eea9585bb9d43fb3bf3e2df8e9d7
+
+COCOAPODS: 1.1.1

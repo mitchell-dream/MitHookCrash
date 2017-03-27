@@ -14,7 +14,7 @@
     "git": "https://github.com/mcmengchen/MitHookCrash.git",
     "tag": "0.0.1"
   },
-  "source_files": "CrashHook/MitCrashHook/**/*.{h,m}",
+  "source_files": "MitCrashHook/**/*",
   "libraries": [
     "c",
     "c++"
@@ -23,5 +23,10 @@
     "UIKit",
     "Foundation"
   ],
-  "requires_arc": true
+  "requires_arc": true,
+  "dependencies": {
+    "fishhook": [
+
+    ]
+  }
 }

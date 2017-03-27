@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03172234888E4655DFFD8BA2778B2445 /* NSMutableArray+MitCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D54F167D89DB4EC4264CF2BC7EB097 /* NSMutableArray+MitCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06A7D5D64FC55183135C54EC68A642FC /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = E690B6556BFA06BE9400CA900A7BD249 /* fishhook.c */; };
+		0981731F2134622F371996852F10C01A /* MitPointerChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 857C7001F88B03F4A1CC8A471E256CE4 /* MitPointerChecker.m */; };
+		0B356AC7EC3A2F8D533F985F3D09F599 /* NSObject+MitCrashSwizz.h in Headers */ = {isa = PBXBuildFile; fileRef = 8050F5FDAFFE36DF99B4450C87541773 /* NSObject+MitCrashSwizz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E35F442119E03787A414BD0DDC6990D /* NSMutableDictionary+MitCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = F2F38491345F104D16BEAA583BE79A3F /* NSMutableDictionary+MitCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		203F8CF2EA190157357AA207BC58ED03 /* MitTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F2BBA3EAB903E0AD9B6A52BE32CC1C0 /* MitTimer.m */; };
+		25999FAB9A699758294AF6A2777BC0D5 /* MitPointerChecker.h in Headers */ = {isa = PBXBuildFile; fileRef = EC146331A261DA136B9D18104571FBA7 /* MitPointerChecker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FF64326C0CF91380C455BF8AA0FE7F0 /* fishhook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D799DB64DF99E3932D406A50E272D90B /* fishhook-dummy.m */; };
+		3207A240E5468989C6CC29EEBCDBCDDB /* NSMutableArray+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 3518673F99C59B443C894725F1E429A3 /* NSMutableArray+MitCrash.m */; };
+		33F5B5C204F8E8E8DDDEDF240EDA77F4 /* MitCrashConfig.plist in Sources */ = {isa = PBXBuildFile; fileRef = 76D356D153B6615F9B99A0FC9293359F /* MitCrashConfig.plist */; };
+		36B0EA314BC253996CB28A93E93B0910 /* NSObject+MitCrashSwizz.m in Sources */ = {isa = PBXBuildFile; fileRef = 784E127CEFE4B9B43929FA62669B3641 /* NSObject+MitCrashSwizz.m */; };
+		3E1A5F71AFFD73A73899BED8690B0F0A /* MitCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 36C93659197B40EE6A043DA722D10FA0 /* MitCrashHandler.m */; };
+		3F8AC173D9659FF074D114B7C652BD64 /* NSObject+KVOMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7F917D1FDB43B7E4E953B52BE5D853 /* NSObject+KVOMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4040C32E57994A2E87659FB6856A5B64 /* MitCrashHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B1464502424F6FD72325004C96FB355D /* MitCrashHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45EF0437658D76189B79AB5DC6667A1E /* NSObject+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 62502D508724A1B054291681E90A3C4C /* NSObject+MitCrash.m */; };
+		47ED68CF3E0DCE43629B3E60B2706E05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		6B0659E7E6C9F368E2B9C2B571B791D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		6C29EDAECDCE479E6EB046A2C7DD5272 /* NSArray+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = DA63554115EF4085613FB3D719DBC397 /* NSArray+MitCrash.m */; };
+		71A7D6373CD539FBD0D4D0BC321C5FB5 /* UIView+MitCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 5125445DECF6E74B12414F7266C74B24 /* UIView+MitCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F1800C05B15EE8A1AF2E66A33B8777C /* NSTimer+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E9C803C24BA07D1F29BDEC829DB5999 /* NSTimer+MitCrash.m */; };
+		857159017FF54F58E0D249B7A8CDE932 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		87AC15D90B136AE1C15AA1212B79F57A /* NSDictionary+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D43513E7C9B60AFF82DF57F0D8072E /* NSDictionary+MitCrash.m */; };
+		890A7812927E9A76AB22565882E85B3C /* NSNotificationCenter+MitCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 37865EDA81B439925F6061F2F02198E1 /* NSNotificationCenter+MitCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C4F8D1E25E89D143287D218F9BABF3D /* MitCrashHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 94DB3326B4C9076F835FF33682C9673B /* MitCrashHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		989A39A2500EB5A0973F1C9B129480D6 /* MitCrashConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DA4DFB2ADB7A44302C45D32FD83313A1 /* MitCrashConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1C470A692BB9681A44DAA59AD8A8D3F /* MitZombieCatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A3CDD2E3A9DC2126135A7F809431A4B /* MitZombieCatcher.m */; };
+		A386CCDB150E743A2607077ECDEF8998 /* NSTimer+MitCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 223C65D2E99A790DA98CE994B13773E7 /* NSTimer+MitCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACF2A498A93D8289BDD14A1288C81E8D /* NSNotificationCenter+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = C8AE2353C04A4F04A1883B9A547968C7 /* NSNotificationCenter+MitCrash.m */; };
+		BD80413DAA56FE6E463FBABF64C7708F /* NSObject+KVOMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA3AD24073FE6625D0BD126852E2298 /* NSObject+KVOMethod.m */; };
+		C1BA00A8F0995AAC46316E1484858ACF /* MitCrashConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2FBCA06B7B1D0CEC9D96E5D5330B87 /* MitCrashConfig.m */; };
+		CC2D5FCCE23EA1DDD8F8285DE0882C80 /* Pods-CrashHook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C37968C9AF5C51EE34736F7C59EBE580 /* Pods-CrashHook-dummy.m */; };
+		D085D06032F3CD471C918EE4E0A377F8 /* NSObject+MitCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 99803CFB87767F920DEF805D0C5C2035 /* NSObject+MitCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D55BD33B1A5EC96E8C3806B3C307162F /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = AE802B29E42E121DA3237AF33A329BC6 /* fishhook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D77F5701D3F8746EDD6BA6A9630B4444 /* NSMutableDictionary+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = D046CD4B0D5CEA3AB25B9D6F41FE12AF /* NSMutableDictionary+MitCrash.m */; };
+		D922DEDC717C8872E7986D02B2EA21BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		D949E91A005DCEE3AFBCCF4DD81704EA /* NSArray+MitCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = B62A4EB19BBF0A4019B6ED3A3801479E /* NSArray+MitCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA820549B4D6A3B354C6904D0E2D8FAE /* MitZombieCatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D0DA482547F5F8C38C91A3D758F8C1E2 /* MitZombieCatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A9926FDB71C494684594E7254A2D3C /* MITCrashHook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC42458C0CF428D766503F23FC954EF /* MITCrashHook-dummy.m */; };
+		E8611510E7E3A1F135BA7C5E8D6D905A /* MitTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 81FAEE31570097ECB210D07D617C1A3A /* MitTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED7B01CB109A2A49FC836DE2D18433EC /* NSDictionary+MitCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 532F40E393DF60A985569EEA7C140E9B /* NSDictionary+MitCrash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F230F71C319F69145928F9D97414AABB /* UIView+MitCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C2A34D48633EBD9E13E21FED14DAF /* UIView+MitCrash.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A99107BE412BE82D51519BD228D6B126 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E04AE33FC92C7A0FD0B28FD48F050932;
+			remoteInfo = fishhook;
+		};
+		D7C2463F4D7687445E1EDD7AF75A3254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E04AE33FC92C7A0FD0B28FD48F050932;
+			remoteInfo = fishhook;
+		};
+		D7DB790912FC2595DBC532524E8E27B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7845B175B0810A9DE3A6B53838EF7CF9;
+			remoteInfo = MITCrashHook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		048C2A34D48633EBD9E13E21FED14DAF /* UIView+MitCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+MitCrash.m"; sourceTree = "<group>"; };
+		0D2FBCA06B7B1D0CEC9D96E5D5330B87 /* MitCrashConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitCrashConfig.m; sourceTree = "<group>"; };
+		223C65D2E99A790DA98CE994B13773E7 /* NSTimer+MitCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MitCrash.h"; sourceTree = "<group>"; };
+		2A3CDD2E3A9DC2126135A7F809431A4B /* MitZombieCatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitZombieCatcher.m; sourceTree = "<group>"; };
+		3518673F99C59B443C894725F1E429A3 /* NSMutableArray+MitCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MitCrash.m"; sourceTree = "<group>"; };
+		36C93659197B40EE6A043DA722D10FA0 /* MitCrashHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitCrashHandler.m; sourceTree = "<group>"; };
+		37865EDA81B439925F6061F2F02198E1 /* NSNotificationCenter+MitCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+MitCrash.h"; sourceTree = "<group>"; };
+		49606C9E3DFCC3507F532B87C758838A /* fishhook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fishhook-prefix.pch"; sourceTree = "<group>"; };
+		5125445DECF6E74B12414F7266C74B24 /* UIView+MitCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+MitCrash.h"; sourceTree = "<group>"; };
+		532F40E393DF60A985569EEA7C140E9B /* NSDictionary+MitCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MitCrash.h"; sourceTree = "<group>"; };
+		552F65D730614D02AEFF53650EA3A68D /* Pods-CrashHook-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CrashHook-acknowledgements.markdown"; sourceTree = "<group>"; };
+		574849BBB6187D63F888457175C5CE14 /* MITCrashHook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MITCrashHook.xcconfig; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		62502D508724A1B054291681E90A3C4C /* NSObject+MitCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitCrash.m"; sourceTree = "<group>"; };
+		6CDDB2527DB910815E3BF2509F4308C8 /* libMITCrashHook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMITCrashHook.a; path = libMITCrashHook.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D356D153B6615F9B99A0FC9293359F /* MitCrashConfig.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = MitCrashConfig.plist; sourceTree = "<group>"; };
+		784E127CEFE4B9B43929FA62669B3641 /* NSObject+MitCrashSwizz.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MitCrashSwizz.m"; sourceTree = "<group>"; };
+		7BCE314DFFE8002247CF0A7C3491871A /* fishhook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fishhook.xcconfig; sourceTree = "<group>"; };
+		7CBEE6C285F8F6CB2F54DD4F3EEE2457 /* Pods-CrashHook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrashHook.release.xcconfig"; sourceTree = "<group>"; };
+		7E9C803C24BA07D1F29BDEC829DB5999 /* NSTimer+MitCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+MitCrash.m"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8050F5FDAFFE36DF99B4450C87541773 /* NSObject+MitCrashSwizz.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitCrashSwizz.h"; sourceTree = "<group>"; };
+		81FAEE31570097ECB210D07D617C1A3A /* MitTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitTimer.h; sourceTree = "<group>"; };
+		857C7001F88B03F4A1CC8A471E256CE4 /* MitPointerChecker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitPointerChecker.m; sourceTree = "<group>"; };
+		877986A9E1C9870C637530308F5061CB /* Pods-CrashHook-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CrashHook-frameworks.sh"; sourceTree = "<group>"; };
+		8F2BBA3EAB903E0AD9B6A52BE32CC1C0 /* MitTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MitTimer.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9440F91A686D24D94C5404B425C38B7C /* Pods-CrashHook-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CrashHook-resources.sh"; sourceTree = "<group>"; };
+		94DB3326B4C9076F835FF33682C9673B /* MitCrashHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitCrashHandler.h; sourceTree = "<group>"; };
+		99803CFB87767F920DEF805D0C5C2035 /* NSObject+MitCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+MitCrash.h"; sourceTree = "<group>"; };
+		A2D54F167D89DB4EC4264CF2BC7EB097 /* NSMutableArray+MitCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MitCrash.h"; sourceTree = "<group>"; };
+		AE802B29E42E121DA3237AF33A329BC6 /* fishhook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		B1464502424F6FD72325004C96FB355D /* MitCrashHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitCrashHeader.h; sourceTree = "<group>"; };
+		B62A4EB19BBF0A4019B6ED3A3801479E /* NSArray+MitCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+MitCrash.h"; sourceTree = "<group>"; };
+		BF30E9212F67296A73380E45B71A59AA /* libPods-CrashHook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-CrashHook.a"; path = "libPods-CrashHook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C37968C9AF5C51EE34736F7C59EBE580 /* Pods-CrashHook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CrashHook-dummy.m"; sourceTree = "<group>"; };
+		C8AE2353C04A4F04A1883B9A547968C7 /* NSNotificationCenter+MitCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+MitCrash.m"; sourceTree = "<group>"; };
+		CCC42458C0CF428D766503F23FC954EF /* MITCrashHook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MITCrashHook-dummy.m"; sourceTree = "<group>"; };
+		CEA3AD24073FE6625D0BD126852E2298 /* NSObject+KVOMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVOMethod.m"; sourceTree = "<group>"; };
+		D046CD4B0D5CEA3AB25B9D6F41FE12AF /* NSMutableDictionary+MitCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MitCrash.m"; sourceTree = "<group>"; };
+		D0DA482547F5F8C38C91A3D758F8C1E2 /* MitZombieCatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitZombieCatcher.h; sourceTree = "<group>"; };
+		D6D43513E7C9B60AFF82DF57F0D8072E /* NSDictionary+MitCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MitCrash.m"; sourceTree = "<group>"; };
+		D799DB64DF99E3932D406A50E272D90B /* fishhook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fishhook-dummy.m"; sourceTree = "<group>"; };
+		DA4DFB2ADB7A44302C45D32FD83313A1 /* MitCrashConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitCrashConfig.h; sourceTree = "<group>"; };
+		DA63554115EF4085613FB3D719DBC397 /* NSArray+MitCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MitCrash.m"; sourceTree = "<group>"; };
+		DD073D148CDE6723B61D5DAEDDFF1A53 /* MITCrashHook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MITCrashHook-prefix.pch"; sourceTree = "<group>"; };
+		E04B6BC71956AB419F7EC224E9286AFC /* libfishhook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libfishhook.a; path = libfishhook.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E690B6556BFA06BE9400CA900A7BD249 /* fishhook.c */ = {isa = PBXFileReference; includeInIndex = 1; path = fishhook.c; sourceTree = "<group>"; };
+		EC146331A261DA136B9D18104571FBA7 /* MitPointerChecker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MitPointerChecker.h; sourceTree = "<group>"; };
+		F2F38491345F104D16BEAA583BE79A3F /* NSMutableDictionary+MitCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MitCrash.h"; sourceTree = "<group>"; };
+		F948DA76ACA1DC0A1476462D70430EA5 /* Pods-CrashHook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CrashHook.debug.xcconfig"; sourceTree = "<group>"; };
+		F9550B842E263726D509E4B246924543 /* Pods-CrashHook-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CrashHook-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA7F917D1FDB43B7E4E953B52BE5D853 /* NSObject+KVOMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVOMethod.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8710D92CB81B104BFE579DFBFBA5EE48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B0659E7E6C9F368E2B9C2B571B791D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D270804E692799C769858EA7CBB77F55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47ED68CF3E0DCE43629B3E60B2706E05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B9756214B6A0DD04E4151B1B0AD4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D922DEDC717C8872E7986D02B2EA21BD /* Foundation.framework in Frameworks */,
+				857159017FF54F58E0D249B7A8CDE932 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		082B3B9EFE21C9CBB37AA110B17055EA /* MitCrashHook */ = {
+			isa = PBXGroup;
+			children = (
+				94DB3326B4C9076F835FF33682C9673B /* MitCrashHandler.h */,
+				36C93659197B40EE6A043DA722D10FA0 /* MitCrashHandler.m */,
+				B1464502424F6FD72325004C96FB355D /* MitCrashHeader.h */,
+				99803CFB87767F920DEF805D0C5C2035 /* NSObject+MitCrash.h */,
+				62502D508724A1B054291681E90A3C4C /* NSObject+MitCrash.m */,
+				8050F5FDAFFE36DF99B4450C87541773 /* NSObject+MitCrashSwizz.h */,
+				784E127CEFE4B9B43929FA62669B3641 /* NSObject+MitCrashSwizz.m */,
+				E4B6E36CFB0487F4DF0EAE7BFE1605DA /* MitContainCrash */,
+				D91F0067A4D5368DF5CF08DDD0E0909F /* MitCrashConfig */,
+				71B0B4CD95098FDD5FF3D144EEC7A0BC /* MitCrashView */,
+				27773A4CA841C353EAA595260486D0E7 /* MitCrashZombie */,
+				AD32CBC288E07C00ADCBEFFE27791621 /* MitKVONotiCrash */,
+				DFF03E79FBC69D887DF39F9773DC6BC7 /* MitTimer */,
+			);
+			name = MitCrashHook;
+			path = MitCrashHook;
+			sourceTree = "<group>";
+		};
+		27773A4CA841C353EAA595260486D0E7 /* MitCrashZombie */ = {
+			isa = PBXGroup;
+			children = (
+				EC146331A261DA136B9D18104571FBA7 /* MitPointerChecker.h */,
+				857C7001F88B03F4A1CC8A471E256CE4 /* MitPointerChecker.m */,
+				D0DA482547F5F8C38C91A3D758F8C1E2 /* MitZombieCatcher.h */,
+				2A3CDD2E3A9DC2126135A7F809431A4B /* MitZombieCatcher.m */,
+			);
+			name = MitCrashZombie;
+			path = MitCrashZombie;
+			sourceTree = "<group>";
+		};
+		414F53FD2C1A446FE4FC1AE7CAA6BD10 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BCE314DFFE8002247CF0A7C3491871A /* fishhook.xcconfig */,
+				D799DB64DF99E3932D406A50E272D90B /* fishhook-dummy.m */,
+				49606C9E3DFCC3507F532B87C758838A /* fishhook-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/fishhook";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71B0B4CD95098FDD5FF3D144EEC7A0BC /* MitCrashView */ = {
+			isa = PBXGroup;
+			children = (
+				5125445DECF6E74B12414F7266C74B24 /* UIView+MitCrash.h */,
+				048C2A34D48633EBD9E13E21FED14DAF /* UIView+MitCrash.m */,
+			);
+			name = MitCrashView;
+			path = MitCrashView;
+			sourceTree = "<group>";
+		};
+		736534D55C0690D4DF747826D97D64BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6B059038B8BD3B1DF390BEB5898EA1B /* fishhook */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				9A3F53793CFFFBD201901E4C6364839A /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				736534D55C0690D4DF747826D97D64BD /* Pods */,
+				8D76316212531CD5B61DF93C7569C5CB /* Products */,
+				EEDE15E519D769756045849918BC989C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8D76316212531CD5B61DF93C7569C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E04B6BC71956AB419F7EC224E9286AFC /* libfishhook.a */,
+				6CDDB2527DB910815E3BF2509F4308C8 /* libMITCrashHook.a */,
+				BF30E9212F67296A73380E45B71A59AA /* libPods-CrashHook.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A3F53793CFFFBD201901E4C6364839A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCBA37E8B1BB93F56475B1CD5A1750C4 /* MITCrashHook */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AD32CBC288E07C00ADCBEFFE27791621 /* MitKVONotiCrash */ = {
+			isa = PBXGroup;
+			children = (
+				37865EDA81B439925F6061F2F02198E1 /* NSNotificationCenter+MitCrash.h */,
+				C8AE2353C04A4F04A1883B9A547968C7 /* NSNotificationCenter+MitCrash.m */,
+				FA7F917D1FDB43B7E4E953B52BE5D853 /* NSObject+KVOMethod.h */,
+				CEA3AD24073FE6625D0BD126852E2298 /* NSObject+KVOMethod.m */,
+			);
+			name = MitKVONotiCrash;
+			path = MitKVONotiCrash;
+			sourceTree = "<group>";
+		};
+		BCBA37E8B1BB93F56475B1CD5A1750C4 /* MITCrashHook */ = {
+			isa = PBXGroup;
+			children = (
+				082B3B9EFE21C9CBB37AA110B17055EA /* MitCrashHook */,
+				CA1AE5EA18C15B286497B7DC9178D597 /* Support Files */,
+			);
+			name = MITCrashHook;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		CA1AE5EA18C15B286497B7DC9178D597 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				574849BBB6187D63F888457175C5CE14 /* MITCrashHook.xcconfig */,
+				CCC42458C0CF428D766503F23FC954EF /* MITCrashHook-dummy.m */,
+				DD073D148CDE6723B61D5DAEDDFF1A53 /* MITCrashHook-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MITCrashHook";
+			sourceTree = "<group>";
+		};
+		CB1651C9A2967B4E95CE3B6D5E64423D /* Pods-CrashHook */ = {
+			isa = PBXGroup;
+			children = (
+				552F65D730614D02AEFF53650EA3A68D /* Pods-CrashHook-acknowledgements.markdown */,
+				F9550B842E263726D509E4B246924543 /* Pods-CrashHook-acknowledgements.plist */,
+				C37968C9AF5C51EE34736F7C59EBE580 /* Pods-CrashHook-dummy.m */,
+				877986A9E1C9870C637530308F5061CB /* Pods-CrashHook-frameworks.sh */,
+				9440F91A686D24D94C5404B425C38B7C /* Pods-CrashHook-resources.sh */,
+				F948DA76ACA1DC0A1476462D70430EA5 /* Pods-CrashHook.debug.xcconfig */,
+				7CBEE6C285F8F6CB2F54DD4F3EEE2457 /* Pods-CrashHook.release.xcconfig */,
+			);
+			name = "Pods-CrashHook";
+			path = "Target Support Files/Pods-CrashHook";
+			sourceTree = "<group>";
+		};
+		D6B059038B8BD3B1DF390BEB5898EA1B /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				E690B6556BFA06BE9400CA900A7BD249 /* fishhook.c */,
+				AE802B29E42E121DA3237AF33A329BC6 /* fishhook.h */,
+				414F53FD2C1A446FE4FC1AE7CAA6BD10 /* Support Files */,
+			);
+			name = fishhook;
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+		D91F0067A4D5368DF5CF08DDD0E0909F /* MitCrashConfig */ = {
+			isa = PBXGroup;
+			children = (
+				DA4DFB2ADB7A44302C45D32FD83313A1 /* MitCrashConfig.h */,
+				0D2FBCA06B7B1D0CEC9D96E5D5330B87 /* MitCrashConfig.m */,
+				76D356D153B6615F9B99A0FC9293359F /* MitCrashConfig.plist */,
+			);
+			name = MitCrashConfig;
+			path = MitCrashConfig;
+			sourceTree = "<group>";
+		};
+		DFF03E79FBC69D887DF39F9773DC6BC7 /* MitTimer */ = {
+			isa = PBXGroup;
+			children = (
+				81FAEE31570097ECB210D07D617C1A3A /* MitTimer.h */,
+				8F2BBA3EAB903E0AD9B6A52BE32CC1C0 /* MitTimer.m */,
+				223C65D2E99A790DA98CE994B13773E7 /* NSTimer+MitCrash.h */,
+				7E9C803C24BA07D1F29BDEC829DB5999 /* NSTimer+MitCrash.m */,
+			);
+			name = MitTimer;
+			path = MitTimer;
+			sourceTree = "<group>";
+		};
+		E4B6E36CFB0487F4DF0EAE7BFE1605DA /* MitContainCrash */ = {
+			isa = PBXGroup;
+			children = (
+				B62A4EB19BBF0A4019B6ED3A3801479E /* NSArray+MitCrash.h */,
+				DA63554115EF4085613FB3D719DBC397 /* NSArray+MitCrash.m */,
+				532F40E393DF60A985569EEA7C140E9B /* NSDictionary+MitCrash.h */,
+				D6D43513E7C9B60AFF82DF57F0D8072E /* NSDictionary+MitCrash.m */,
+				A2D54F167D89DB4EC4264CF2BC7EB097 /* NSMutableArray+MitCrash.h */,
+				3518673F99C59B443C894725F1E429A3 /* NSMutableArray+MitCrash.m */,
+				F2F38491345F104D16BEAA583BE79A3F /* NSMutableDictionary+MitCrash.h */,
+				D046CD4B0D5CEA3AB25B9D6F41FE12AF /* NSMutableDictionary+MitCrash.m */,
+			);
+			name = MitContainCrash;
+			path = MitContainCrash;
+			sourceTree = "<group>";
+		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EEDE15E519D769756045849918BC989C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB1651C9A2967B4E95CE3B6D5E64423D /* Pods-CrashHook */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CF46F333B2D88CCEC0D184A252A1920 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989A39A2500EB5A0973F1C9B129480D6 /* MitCrashConfig.h in Headers */,
+				8C4F8D1E25E89D143287D218F9BABF3D /* MitCrashHandler.h in Headers */,
+				4040C32E57994A2E87659FB6856A5B64 /* MitCrashHeader.h in Headers */,
+				25999FAB9A699758294AF6A2777BC0D5 /* MitPointerChecker.h in Headers */,
+				E8611510E7E3A1F135BA7C5E8D6D905A /* MitTimer.h in Headers */,
+				DA820549B4D6A3B354C6904D0E2D8FAE /* MitZombieCatcher.h in Headers */,
+				D949E91A005DCEE3AFBCCF4DD81704EA /* NSArray+MitCrash.h in Headers */,
+				ED7B01CB109A2A49FC836DE2D18433EC /* NSDictionary+MitCrash.h in Headers */,
+				03172234888E4655DFFD8BA2778B2445 /* NSMutableArray+MitCrash.h in Headers */,
+				0E35F442119E03787A414BD0DDC6990D /* NSMutableDictionary+MitCrash.h in Headers */,
+				890A7812927E9A76AB22565882E85B3C /* NSNotificationCenter+MitCrash.h in Headers */,
+				3F8AC173D9659FF074D114B7C652BD64 /* NSObject+KVOMethod.h in Headers */,
+				D085D06032F3CD471C918EE4E0A377F8 /* NSObject+MitCrash.h in Headers */,
+				0B356AC7EC3A2F8D533F985F3D09F599 /* NSObject+MitCrashSwizz.h in Headers */,
+				A386CCDB150E743A2607077ECDEF8998 /* NSTimer+MitCrash.h in Headers */,
+				71A7D6373CD539FBD0D4D0BC321C5FB5 /* UIView+MitCrash.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F2AA95C5062E453B9EFAED224F140F1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55BD33B1A5EC96E8C3806B3C307162F /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6CDD8344ACAC07EA0054193A4B239761 /* Pods-CrashHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283C00AC2BD36EF00ACF84430632B213 /* Build configuration list for PBXNativeTarget "Pods-CrashHook" */;
+			buildPhases = (
+				47B83A02DE98C1DBC2C06EE4AFA5F9E0 /* Sources */,
+				D270804E692799C769858EA7CBB77F55 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B32861F42938F030B6504ACC221D6609 /* PBXTargetDependency */,
+				62E853FED6F352B7C80EE263836B4EBD /* PBXTargetDependency */,
+			);
+			name = "Pods-CrashHook";
+			productName = "Pods-CrashHook";
+			productReference = BF30E9212F67296A73380E45B71A59AA /* libPods-CrashHook.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7845B175B0810A9DE3A6B53838EF7CF9 /* MITCrashHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F23E89828886C27275183E3B755C8F53 /* Build configuration list for PBXNativeTarget "MITCrashHook" */;
+			buildPhases = (
+				C538BAAD011044E556C0558B6509EB12 /* Sources */,
+				D6B9756214B6A0DD04E4151B1B0AD4EC /* Frameworks */,
+				1CF46F333B2D88CCEC0D184A252A1920 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3203CD3780AD9CFE7CC5B1AE55EE01B3 /* PBXTargetDependency */,
+			);
+			name = MITCrashHook;
+			productName = MITCrashHook;
+			productReference = 6CDDB2527DB910815E3BF2509F4308C8 /* libMITCrashHook.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E04AE33FC92C7A0FD0B28FD48F050932 /* fishhook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F02D0A4F331D910FEF28484C28D851ED /* Build configuration list for PBXNativeTarget "fishhook" */;
+			buildPhases = (
+				988DD5B76FBDF7233294D91F5FFE3025 /* Sources */,
+				8710D92CB81B104BFE579DFBFBA5EE48 /* Frameworks */,
+				7F2AA95C5062E453B9EFAED224F140F1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fishhook;
+			productName = fishhook;
+			productReference = E04B6BC71956AB419F7EC224E9286AFC /* libfishhook.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8D76316212531CD5B61DF93C7569C5CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E04AE33FC92C7A0FD0B28FD48F050932 /* fishhook */,
+				7845B175B0810A9DE3A6B53838EF7CF9 /* MITCrashHook */,
+				6CDD8344ACAC07EA0054193A4B239761 /* Pods-CrashHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47B83A02DE98C1DBC2C06EE4AFA5F9E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2D5FCCE23EA1DDD8F8285DE0882C80 /* Pods-CrashHook-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		988DD5B76FBDF7233294D91F5FFE3025 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF64326C0CF91380C455BF8AA0FE7F0 /* fishhook-dummy.m in Sources */,
+				06A7D5D64FC55183135C54EC68A642FC /* fishhook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C538BAAD011044E556C0558B6509EB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1BA00A8F0995AAC46316E1484858ACF /* MitCrashConfig.m in Sources */,
+				33F5B5C204F8E8E8DDDEDF240EDA77F4 /* MitCrashConfig.plist in Sources */,
+				3E1A5F71AFFD73A73899BED8690B0F0A /* MitCrashHandler.m in Sources */,
+				E1A9926FDB71C494684594E7254A2D3C /* MITCrashHook-dummy.m in Sources */,
+				0981731F2134622F371996852F10C01A /* MitPointerChecker.m in Sources */,
+				203F8CF2EA190157357AA207BC58ED03 /* MitTimer.m in Sources */,
+				A1C470A692BB9681A44DAA59AD8A8D3F /* MitZombieCatcher.m in Sources */,
+				6C29EDAECDCE479E6EB046A2C7DD5272 /* NSArray+MitCrash.m in Sources */,
+				87AC15D90B136AE1C15AA1212B79F57A /* NSDictionary+MitCrash.m in Sources */,
+				3207A240E5468989C6CC29EEBCDBCDDB /* NSMutableArray+MitCrash.m in Sources */,
+				D77F5701D3F8746EDD6BA6A9630B4444 /* NSMutableDictionary+MitCrash.m in Sources */,
+				ACF2A498A93D8289BDD14A1288C81E8D /* NSNotificationCenter+MitCrash.m in Sources */,
+				BD80413DAA56FE6E463FBABF64C7708F /* NSObject+KVOMethod.m in Sources */,
+				45EF0437658D76189B79AB5DC6667A1E /* NSObject+MitCrash.m in Sources */,
+				36B0EA314BC253996CB28A93E93B0910 /* NSObject+MitCrashSwizz.m in Sources */,
+				7F1800C05B15EE8A1AF2E66A33B8777C /* NSTimer+MitCrash.m in Sources */,
+				F230F71C319F69145928F9D97414AABB /* UIView+MitCrash.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3203CD3780AD9CFE7CC5B1AE55EE01B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = E04AE33FC92C7A0FD0B28FD48F050932 /* fishhook */;
+			targetProxy = A99107BE412BE82D51519BD228D6B126 /* PBXContainerItemProxy */;
+		};
+		62E853FED6F352B7C80EE263836B4EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = fishhook;
+			target = E04AE33FC92C7A0FD0B28FD48F050932 /* fishhook */;
+			targetProxy = D7C2463F4D7687445E1EDD7AF75A3254 /* PBXContainerItemProxy */;
+		};
+		B32861F42938F030B6504ACC221D6609 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MITCrashHook;
+			target = 7845B175B0810A9DE3A6B53838EF7CF9 /* MITCrashHook */;
+			targetProxy = D7DB790912FC2595DBC532524E8E27B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		20F045919B0A2D00AE95C46436623FBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BCE314DFFE8002247CF0A7C3491871A /* fishhook.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49E92C7372FFCFD853F2783F70AE3724 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574849BBB6187D63F888457175C5CE14 /* MITCrashHook.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MITCrashHook/MITCrashHook-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5A6E1467332F4A4078B864D7EF442D72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BCE314DFFE8002247CF0A7C3491871A /* fishhook.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/fishhook/fishhook-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB8BF0758E25A4F49E422739D50FC9EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574849BBB6187D63F888457175C5CE14 /* MITCrashHook.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MITCrashHook/MITCrashHook-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C62AA8C22B2ED899F679329AD049642A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CBEE6C285F8F6CB2F54DD4F3EEE2457 /* Pods-CrashHook.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F0FA957642FB1C7BCE70E01919495F46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F948DA76ACA1DC0A1476462D70430EA5 /* Pods-CrashHook.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		283C00AC2BD36EF00ACF84430632B213 /* Build configuration list for PBXNativeTarget "Pods-CrashHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0FA957642FB1C7BCE70E01919495F46 /* Debug */,
+				C62AA8C22B2ED899F679329AD049642A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F02D0A4F331D910FEF28484C28D851ED /* Build configuration list for PBXNativeTarget "fishhook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A6E1467332F4A4078B864D7EF442D72 /* Debug */,
+				20F045919B0A2D00AE95C46436623FBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F23E89828886C27275183E3B755C8F53 /* Build configuration list for PBXNativeTarget "MITCrashHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E92C7372FFCFD853F2783F70AE3724 /* Debug */,
+				AB8BF0758E25A4F49E422739D50FC9EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

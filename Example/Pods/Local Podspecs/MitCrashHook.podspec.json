@@ -1,0 +1,27 @@
+{
+  "name": "MITCrashHook",
+  "version": "0.0.1",
+  "summary": "MITCrashHook summary",
+  "homepage": "https://github.com/mcmengchen",
+  "license": "MIT",
+  "authors": {
+    "mcmengchen": "416922992@qq.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/mcmengchen/MitHookCrash.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "CrashHook/MitCrashHook/**/*.{h,m}",
+  "libraries": [
+    "c",
+    "c++"
+  ],
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "requires_arc": true
+}

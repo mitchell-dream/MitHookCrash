@@ -5,7 +5,6 @@
 [![Platform](https://img.shields.io/cocoapods/p/MITCrashHook.svg?style=flat)](http://cocoapods.org/pods/MITCrashHook)
 ---
 
-#MITCrashHook
 + iOS 的 crash 动态防护方案
 + 防止未实现的方法引起的崩溃
 + 防止 KVO 引起的崩溃

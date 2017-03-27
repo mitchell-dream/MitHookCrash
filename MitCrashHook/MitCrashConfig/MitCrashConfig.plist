@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>MitCrash_CONTAIN_KEY</key>
-	<true/>
+	<false/>
 	<key>MitCrash_ZOBIE_KEY</key>
 	<false/>
 	<key>MitCrash_UIVIEW_KEY</key>
-	<true/>
+	<false/>
 	<key>MitCrash_TIMER_KEY</key>
 	<false/>
 	<key>MitCrash_NOTI_KEY</key>

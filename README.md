@@ -6,9 +6,7 @@
 [![License](https://img.shields.io/cocoapods/l/MitHookCrash.svg?style=flat)](http://cocoapods.org/pods/MitHookCrash)
 [![Platform](https://img.shields.io/cocoapods/p/MitHookCrash.svg?style=flat)](http://cocoapods.org/pods/MitHookCrash)
 
-
-###基于 Swizzle Method 的动态防止 Crash 方案
-
+##基于 Swizzle Method 的动态防止 Crash 方案
 + 防止未实现的方法引起的崩溃
 + 防止 KVO 引起的崩溃
 + 防止通知引起的崩溃
